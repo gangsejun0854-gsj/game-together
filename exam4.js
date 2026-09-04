@@ -62,6 +62,7 @@
 
             scoreElement.style.display = 'none';
             timerElement.style.display = 'none';
+            document.getElementById('startButton').style.display = 'inline-block';
             document.getElementById('resetButton').style.display = 'none';
             document.getElementById('targetChar').innerText = `최종 점수: ${score}`;
             document.removeEventListener('keydown', checkInput); // 키 입력 이벤트 제거
@@ -78,6 +79,7 @@
 
             scoreElement.style.display = 'block';
             timerElement.style.display = 'block';
+            document.getElementById('startButton').style.display = 'none';
             document.getElementById('resetButton').style.display = 'inline-block';
 
             commentElement.innerText = '아래 문자를 입력하세요. (소/대문자 구분)';
@@ -97,6 +99,7 @@
 
             scoreElement.style.display = 'block';
             timerElement.style.display = 'block';
+            document.getElementById('startButton').style.display = 'inline-block';
             document.getElementById('resetButton').style.display = 'inline-block';
 
             commentElement.innerText = '아래 문자를 입력하세요. (소/대문자 구분)';
